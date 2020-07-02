@@ -157,6 +157,9 @@ copy "$(ProjectDir)thirdparty\lib\DuiLib.lib" "$(SolutionDir)\lib\DuiLib"  /Y</C
   <ItemGroup>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="firstdemo.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
