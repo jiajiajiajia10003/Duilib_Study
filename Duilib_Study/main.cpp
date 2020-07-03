@@ -16,9 +16,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCm
 	//::MessageBox(NULL, _T("Hello World!"), NULL, NULL);
 	CPaintManagerUI::SetInstance(hInstance);//设置进程的实例句柄，这个值会在注册窗口类时使用
 
-	CDuiFrameWnd wnd;;
-	wnd.Create(NULL, _T("wnd"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
-	wnd.ShowModal();
+	test_show_first_window(true);
 
 	return 0; 
 }

@@ -31,3 +31,27 @@ public:
 protected:
 	CPaintManagerUI m_PaintManager;
 };
+
+
+void test_show_first_window(bool isShowModal)
+{
+	if (isShowModal)
+	{
+		// 创建模态窗口
+		CDuiFrameWnd wnd;;
+		wnd.Create(NULL, _T("简单测试 Modal"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
+		wnd.ShowModal();
+	}
+	else
+	{
+		// 创建非模态窗口
+		CDuiFrameWnd* pFrame = new CDuiFrameWnd();
+		if (pFrame == NULL)
+			return;
+
+		pFrame->Create(NULL, _T("简单测试 NoModal"), UI_WNDSTYLE_FRAME, WS_EX_WINDOWEDGE);
+		pFrame->CenterWindow();
+		pFrame->ShowWindow(true);
+		CPaintManagerUI::MessageLoop();
+	}
+}
