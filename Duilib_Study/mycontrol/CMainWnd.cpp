@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "CMainWnd.h"
 
+#include "mycontrol/CSkinPikerPictureItemUI.h"
 
 void test_my_main_wnd()
 {
@@ -114,4 +115,12 @@ void CMainWnd::Maximize()
 void CMainWnd::Restore()
 {
 	SendMessage(WM_SYSCOMMAND, SC_RESTORE, 0);
+}
+
+CControlUI* CMainWnd::CreateControl(LPCTSTR pstrClass)
+{
+	if (_tcsicmp(pstrClass, _T("SkinPikerPictureItem")) == 0)
+		return	new CSkinPikerPictureItemUI();
+
+	return NULL;
 }

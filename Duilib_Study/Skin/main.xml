@@ -54,6 +54,9 @@
           <Control width="2"/>
         </HorizontalLayout>
         
+		<SkinPikerPictureItem height="60" text="SkinPikerPictureItem" hotbkcolor="#c7edcc" 
+		textcolor="#ffffff" bkname="hellokitty" author="Jay" /> 
+		
     </VerticalLayout>
   
 </Window>

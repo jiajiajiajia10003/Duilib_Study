@@ -32,5 +32,11 @@
     <ClInclude Include="firstdemo.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="mycontrol\CSkinPikerPictureItemUI.h">
+      <Filter>mycontrol</Filter>
+    </ClInclude>
+    <ClInclude Include="mycontrol\CMainWnd.h">
+      <Filter>mycontrol</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

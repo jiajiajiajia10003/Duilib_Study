@@ -26,6 +26,8 @@ public:
 	void Maximize();
 	void Restore();
 
+	CControlUI* CreateControl(LPCTSTR pstrClass);
+
 };
 
 
